@@ -1,1 +1,1 @@
-export * from './lib/react-shared-ui';
+export * from './lib/components';
