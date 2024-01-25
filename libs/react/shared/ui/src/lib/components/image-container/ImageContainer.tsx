@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const ImageContainer = (props: Props) => {
+const ImageContainer = () => {
   return (
     <div>ImageContainer</div>
   )
