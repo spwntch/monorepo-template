@@ -2,7 +2,9 @@
   "name": "@spwn/workspace-boilerplate",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "pnpx nx serve getting-started"
+  },
   "private": true,
   "dependencies": {
     "@nx/next": "17.2.8",
