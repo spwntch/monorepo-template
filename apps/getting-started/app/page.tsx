@@ -10,6 +10,14 @@ export default async function Index() {
       url: 'https://unsplash.com/@joshhild?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
     },
   };
-  
-  return <ImageContainer image={image} />;
+
+  return (
+    <ImageContainer image={image}>
+      <div className="h-full flex flex-col justify-center items-center">
+        <div>
+          <img src="brand/logo.png" alt="" />
+        </div>
+      </div>
+    </ImageContainer>
+  );
 }
