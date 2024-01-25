@@ -1,9 +1,14 @@
+import {
+  FullscreenImageContainer,
+  IAttributableImage,
+} from '@spwn/react-shared-ui';
 
+type Props = {
+  image: IAttributableImage;
+};
 
-const ImageContainer = () => {
-  return (
-    <div>ImageContainer</div>
-  )
-}
+const ImageContainer = ({ image }: Props) => {
+  return <FullscreenImageContainer image={image} />;
+};
 
-export default ImageContainer
+export default ImageContainer;
