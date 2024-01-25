@@ -45,8 +45,19 @@
   },
   "generators": {
     "@nx/react": {
-      "application": {
-        "babel": true
+      "library": {
+        "name": "react-<SCOPE>-<NAME>",
+        "unitTestRunner": "vitest",
+        "bundler": "vite",
+        "directory": "libs/react/<SCOPE>/<NAME>",
+        "compiler": "swc",
+        "globalCss": true,
+        "importPath": "@spwn/react-<SCOPE>-<NAME>",
+        "pascalCaseFiles": true,
+        "publishable": true,
+        "simpleName": true,
+        "style": "none",
+        "tags": ["tech:react", "scope:<SCOPE>"]
       }
     },
     "@nx/next": {
