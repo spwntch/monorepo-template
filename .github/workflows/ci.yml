@@ -18,4 +18,4 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      - run: pnpm ci
+      - run: pnpm install
