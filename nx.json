@@ -27,6 +27,10 @@
           "codeCoverage": true
         }
       }
+    },
+    "@nx/vite:test": {
+      "cache": true,
+      "inputs": ["default", "^production"]
     }
   },
   "namedInputs": {
@@ -45,6 +49,9 @@
   },
   "generators": {
     "@nx/react": {
+      "application": {
+        "babel": true
+      },
       "library": {
         "name": "react-<SCOPE>-<NAME>",
         "unitTestRunner": "vitest",
@@ -52,7 +59,7 @@
         "directory": "libs/react/<SCOPE>/<NAME>",
         "compiler": "swc",
         "globalCss": true,
-        "importPath": "@spwn/react-<SCOPE>-<NAME>",
+        "importPath": "@org/react-<SCOPE>-<NAME>",
         "pascalCaseFiles": true,
         "publishable": true,
         "simpleName": true,
