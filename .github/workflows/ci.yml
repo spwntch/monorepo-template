@@ -15,7 +15,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      - run: pnpm ci
+      - run: pnpm install
+      - run: pnpx nx affected -t lint
+      - run: pnpx nx affected -t test --configuration=ci
+      - run: pnpx nx affected -t build
