@@ -5,18 +5,20 @@ on:
       - '*'
       - '*/*'
       - '**'
-      - '!preview'
       - '!main'
 jobs:
-  ci:
+  main:
     runs-on: ubuntu-latest
     steps:
-      - uses: volta-cli/action@v4
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
-      - run: npm install
-      - run: npx nx affected -t lint
-      - run: npx nx affected -t test --configuration=ci
-      - run: npx nx affected -t build
+      - name: Install deps
+        run: npm ci
+      - name: Lint affected
+        run: npx nx affected -t lint
+      - name: Test affected
+        run: npx nx affected -t test --configuration=ci
+      - name: Build affected
+        run: npx nx affected -t build
