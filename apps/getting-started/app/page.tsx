@@ -1,5 +1,4 @@
-import { ImageContainer } from '@org/react-shared-ui';
-import { IAttributableImage } from '@spwn/react-shared-ui';
+import { FullscreenImageContainer, IAttributableImage } from '@spwn/react-shared-ui';
 
 export default async function Index() {
   const image: IAttributableImage = {
@@ -12,12 +11,12 @@ export default async function Index() {
   };
 
   return (
-    <ImageContainer image={image}>
+    <FullscreenImageContainer image={image}>
       <div className="h-full flex flex-col justify-center items-center">
         <div>
           <img src="brand/logo.png" alt="" />
         </div>
-      </div>
-    </ImageContainer>
+       </div>
+     </FullscreenImageContainer>
   );
 }
