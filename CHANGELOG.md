@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/spwntch/workspace-boilerplate/compare/v1.0.0...v1.1.0) (2024-01-26)
+
+
+### Features
+
+* **shared/ui:** display initial storybook ([49a6971](https://github.com/spwntch/workspace-boilerplate/commit/49a6971724fc8e8394862be21faf132f5c307015))
+
 ## 1.0.0 (2024-01-26)
 
 
