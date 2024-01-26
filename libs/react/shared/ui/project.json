@@ -31,6 +31,12 @@
       "options": {
         "reportsDirectory": "../../../../coverage/libs/react/shared/ui"
       }
+    },
+    "release": {
+      "executor": "nx-release:build-update-publish",
+      "options": {
+        "libName": "react-shared-ui"
+      }
     }
   }
 }

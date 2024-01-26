@@ -5,10 +5,9 @@ on:
       - '*'
       - '*/*'
       - '**'
-      - '!preview'
       - '!main'
 jobs:
-  ci:
+  main:
     runs-on: ubuntu-latest
     steps:
       - uses: volta-cli/action@v4
