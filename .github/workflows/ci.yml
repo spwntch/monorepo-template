@@ -19,3 +19,4 @@ jobs:
       - run: npx nx affected -t lint
       - run: npx nx affected -t test --configuration=ci
       - run: npx nx affected -t build
+      - run: npx nx affected -t build-storybook
