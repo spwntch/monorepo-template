@@ -16,10 +16,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - run: pnpm install
-      - run: pnpx nx affected -t lint
-      - run: pnpx nx affected -t test --configuration=ci
-      - run: pnpx nx affected -t build
+      - run: npm ci
+      - run: npx nx affected -t lint
+      - run: npx nx affected -t test --configuration=ci
+      - run: npx nx affected -t build
