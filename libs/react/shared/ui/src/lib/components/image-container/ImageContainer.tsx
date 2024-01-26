@@ -9,7 +9,7 @@ type Props = {
 };
 
 const ImageContainer = ({ image, children }: Props & PropsWithChildren) => {
-  console.log(`i'm an improvement`);
+  console.log(`i'm an improvement.`);
   return (
     <FullscreenImageContainer image={image}>
       {children}
