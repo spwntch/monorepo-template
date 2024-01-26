@@ -1,5 +1,5 @@
 {
-  "name": "@org/react-shared-ui",
+  "name": "@zpydee/react-shared-ui-playground-1",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",
