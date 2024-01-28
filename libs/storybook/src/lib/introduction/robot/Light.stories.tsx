@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Light from './Light';
 
-
 const meta: Meta<typeof Light> = {
   title: 'WELCOME/Light',
   component: Light,
@@ -14,7 +13,6 @@ export const Default: Story = {
   args: {},
   play: async ({ canvasElement }) => {
     // const canvas = within(canvasElement);
-
   },
 };
 
@@ -28,4 +26,16 @@ export const orange: Story = {
 
 export const red: Story = {
   args: { color: 'red' },
+};
+
+export const trafficLight: Story = {
+  render: () => {
+    return (
+      <div>
+        <Light color="red" />
+        <Light color="orange" />
+        <Light />
+      </div>
+    );
+  },
 };
