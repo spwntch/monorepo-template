@@ -10,7 +10,7 @@ export default meta;
 
 type Story = StoryObj<typeof Light>;
 
-/** With no color speficied, we'll default to green */
+/** With no color speficied, we'll default to green. */
 export const Default: Story = {
   args: {},
   play: async ({ canvasElement }) => {
@@ -18,16 +18,19 @@ export const Default: Story = {
   },
 };
 
-export const green: Story = {
-  args: { color: 'green' },
+/** color = red */
+export const red: Story = {
+  args: { color: 'red' },
 };
 
+/** color = yellow */
 export const yellow: Story = {
   args: { color: 'yellow' },
 };
 
-export const red: Story = {
-  args: { color: 'red' },
+/** color = green */
+export const green: Story = {
+  args: { color: 'green' },
 };
 
 /** Compose lights in a flex column div for a regular traffic light*/
