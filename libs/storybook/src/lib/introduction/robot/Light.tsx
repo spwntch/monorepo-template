@@ -1,14 +1,13 @@
 import React from 'react';
 
 type Props = {
-  color?: 'green' | 'orange' | 'red';
+  color?: 'green' | 'yellow' | 'red';
 };
 
 const Light = ({ color = 'green' }: Props) => {
   return (
     <div
       style={{
-        margin: 10,
         width: 50,
         height: 50,
         borderRadius: '50%',

@@ -1,6 +1,7 @@
 {
     "files.autoSave": "afterDelay",
     "conventionalCommits.scopes": [
-        "storybook"
+        "storybook",
+        "react-shared-ui"
     ]
 }

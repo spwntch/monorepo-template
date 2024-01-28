@@ -20,20 +20,25 @@ export const green: Story = {
   args: { color: 'green' },
 };
 
-export const orange: Story = {
-  args: { color: 'orange' },
+export const yellow: Story = {
+  args: { color: 'yellow' },
 };
 
 export const red: Story = {
   args: { color: 'red' },
 };
 
-export const trafficLight: Story = {
+export const composedTrafficLight: Story = {
   render: () => {
     return (
-      <div>
+      <div style={{
+        display:'flex',
+        flexDirection:'column',
+        gap: 10
+
+      }}>
         <Light color="red" />
-        <Light color="orange" />
+        <Light color="yellow" />
         <Light />
       </div>
     );
