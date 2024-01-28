@@ -4,11 +4,13 @@ import Light from './Light';
 const meta: Meta<typeof Light> = {
   title: 'WELCOME/Light',
   component: Light,
+  tags: ['autodocs'],
 };
 export default meta;
 
 type Story = StoryObj<typeof Light>;
 
+/** With no color speficied, we'll default to green */
 export const Default: Story = {
   args: {},
   play: async ({ canvasElement }) => {
@@ -28,6 +30,7 @@ export const red: Story = {
   args: { color: 'red' },
 };
 
+/** Compose lights in a flex column div for a regular traffic light*/
 export const composedTrafficLight: Story = {
   render: () => {
     return (
