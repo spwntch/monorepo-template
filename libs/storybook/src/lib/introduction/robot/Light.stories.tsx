@@ -31,12 +31,18 @@ export const red: Story = {
 export const composedTrafficLight: Story = {
   render: () => {
     return (
-      <div style={{
-        display:'flex',
-        flexDirection:'column',
-        gap: 10
-
-      }}>
+      <div
+        style={{
+          width: 50,
+          borderRadius: 25,
+          background: 'lightgrey',
+          padding: 10,
+          border: '2px solid black',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 10,
+        }}
+      >
         <Light color="red" />
         <Light color="yellow" />
         <Light />
