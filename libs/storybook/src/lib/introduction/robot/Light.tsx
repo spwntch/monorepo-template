@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-type Props = {}
+type Props = {
+  color: 'green' | 'orange' | 'red';
+};
 
-const Light = (props: Props) => {
+const Light = ({ color = 'green' }: Props) => {
   return (
-    <div>Light</div>
-  )
-}
+    <div
+      style={{
+        width: 50,
+        height: 50,
+        borderRadius: '50%',
+        background: color,
+      }}
+    />
+  );
+};
 
-export default Light
+export default Light;
