@@ -6,7 +6,7 @@ import { expect } from '@storybook/jest';
 
 const meta: Meta<typeof ImageContainer> = {
   component: ImageContainer,
-  title: 'UI/ImageContainer',
+  title: 'REACT-SHARED-UI/CONTAINERS/ImageContainer',
 };
 export default meta;
 type Story = StoryObj<typeof ImageContainer>;
