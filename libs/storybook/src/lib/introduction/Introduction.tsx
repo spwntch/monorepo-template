@@ -1,11 +1,6 @@
-import React from 'react'
 
-type Props = {}
+const Introduction = () => {
+  return <div>Introduction</div>;
+};
 
-const Introduction = (props: Props) => {
-  return (
-    <div>Introduction</div>
-  )
-}
-
-export default Introduction
+export default Introduction;
