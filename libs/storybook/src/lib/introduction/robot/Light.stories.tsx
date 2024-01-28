@@ -12,10 +12,21 @@ export default meta;
 
 type Story = StoryObj<typeof Light>;
 
-export const Simple: Story = {
+export const Default: Story = {
   args: {},
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
   },
 };
 
+export const green: Story = {
+  args: { color: 'green' },
+};
+
+export const orange: Story = {
+  args: { color: 'orange' },
+};
+
+export const red: Story = {
+  args: { color: 'red' },
+};
