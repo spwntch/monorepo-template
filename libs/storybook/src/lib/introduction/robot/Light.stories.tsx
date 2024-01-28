@@ -4,7 +4,7 @@ import Light from './Light';
 const meta: Meta<typeof Light> = {
   title: 'WELCOME/Light',
   component: Light,
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
 };
 export default meta;
 
