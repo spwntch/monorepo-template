@@ -19,11 +19,10 @@ This project has been developed to assist you in organising your code according 
 
 ## Getting Started
 
-To get started with the boilerplate, we recommend the following steps:
+To get started with this boilerplate for your own project, you can either fork our repo (for public projects), or [mirror-clone the project](https://gist.github.com/stufield/0720c5519b7950d9c336244dbca14a1f) (if you need a private repo).
 
-1. Fork the main branch of this repository.
-1. Clone the forked repo.
-1. Install dependencies & run the **getting-started** project:
+Once you have a local instance of the repo, install dependencies & run the **getting-started** project
+
 
 ```bash
 npm install
@@ -34,7 +33,9 @@ The app that will be served at `http://localhost:4200` will give you access to e
 
 ## Contributing
 
-As an open-source project, we welcome meaningful controbutions. [Please read this guide](https://github.com/spwntch/workspace-boilerplate/blob/main/CONTRIBUTING.md) if you want to get involved.
+As an open-source project, we welcome meaningful contributions. [Please read this guide](https://github.com/spwntch/workspace-boilerplate/blob/main/CONTRIBUTING.md) if you want to get involved.
+
+To contribute to this project, simply clone it locally.
 
 ## Connect with us!
 
