@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@org/react-shared-ui": ["libs/react/shared/ui/src/index.ts"]
+      "@org/react-shared-ui": ["libs/react/shared/ui/src/index.ts"],
+      "@spwn/storybook": ["libs/storybook/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
