@@ -9,7 +9,14 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/getting-started"
+        "outputPath": "dist/apps/getting-started",
+        "assets": [
+          {
+            "glob": "favicon.ico",
+            "input": "assets/spwn/web-assets",
+            "output": ""
+          }
+        ]
       },
       "configurations": {
         "development": {
