@@ -9,7 +9,7 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
     },
-    "serve": {
+    "dev": {
       "executor": "@nx/storybook:storybook",
       "options": {
         "port": 4400,

@@ -4,7 +4,10 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import { mergeConfig } from 'vite';
 
 const config: StorybookConfig = {
-  staticDirs: [{ from: '../../../assets/spwn/brand', to: '/brand' }],
+  staticDirs: [
+    { from: '../../../assets/storybook', to: '/images' },
+    { from: '../../../assets/spwn/brand', to: '/brand' },
+  ],
 
   stories: [
     '../src/lib/*.mdx',
