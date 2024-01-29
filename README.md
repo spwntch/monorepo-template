@@ -33,7 +33,7 @@ The app that will be served at `http://localhost:4200` will give you access to e
 
 ## Contributing
 
-As an open-source project, we welcome meaningful controbutions. [Please read this guide](https://github.com/spwntch/workspace-boilerplate/blob/main/CONTRIBUTING.md) if you want to get involved.
+As an open-source project, we welcome meaningful contributions. [Please read this guide](https://github.com/spwntch/workspace-boilerplate/blob/main/CONTRIBUTING.md) if you want to get involved.
 
 To contribute to this project, simply clone it locally.
 
