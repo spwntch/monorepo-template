@@ -4,6 +4,6 @@ export default create({
   base: 'light',
   brandTitle: 'Spawntech Storybook',
   brandUrl: 'https://www.spawntech.io',
-  brandImage: 'brand/logo.png',
+  brandImage: 'brand/logo.webp',
   brandTarget: '_blank',
 });

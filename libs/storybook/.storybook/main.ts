@@ -5,8 +5,8 @@ import { mergeConfig } from 'vite';
 
 const config: StorybookConfig = {
   staticDirs: [
-    { from: '../../../assets/storybook', to: '/images' },
-    { from: '../../../assets/spwn/brand', to: '/brand' },
+    { from: '../../../assets/storybook/public', to: '/images' },
+    { from: '../../../assets/spwn/brand/public', to: '/brand' },
   ],
 
   stories: [
