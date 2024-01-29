@@ -12,7 +12,7 @@ export default async function Index() {
 
   return (
     <FullscreenImageContainer image={image}>
-      <div className="h-full flex flex-col justify-center items-center">
+      <div className="h-full flex flex-col justify-center items-center px-3">
         <div>
           <img src="brand/logo.png" alt="" />
         </div>
