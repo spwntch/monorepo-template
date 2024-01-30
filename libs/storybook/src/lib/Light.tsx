@@ -1,9 +1,7 @@
-import React from 'react';
-
-type Props = {
+interface Props {
   /** The color of the light. */
   color?: 'red' | 'yellow' | 'green';
-};
+}
 
 /** A constituent component in a traffic light, complete with a configurable color prop. */
 const Light = ({ color = 'green' }: Props) => {
