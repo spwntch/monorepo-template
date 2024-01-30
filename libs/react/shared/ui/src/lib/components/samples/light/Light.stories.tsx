@@ -2,9 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Light from './Light';
 
 const meta: Meta<typeof Light> = {
-  title: 'WELCOME/Light',
+  title: 'REACT-SHARED-UI/Samples/Light',
   component: Light,
-  // tags: ['autodocs'],
 };
 export default meta;
 

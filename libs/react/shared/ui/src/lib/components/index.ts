@@ -1,1 +1,0 @@
-export {default as ImageContainer} from './image-container/ImageContainer'
