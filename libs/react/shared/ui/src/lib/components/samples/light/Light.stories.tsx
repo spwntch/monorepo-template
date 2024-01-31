@@ -34,13 +34,11 @@ export const green: Story = {
 
 /** Compose lights in a single column grid for a regular traffic light*/
 export const composedTrafficLight: Story = {
-  render: () => {
-    return (
-      <div className="w-fit rounded-full bg-slate-200 p-3 border-2 border-black grid grid-cols-1 gap-2">
-        <Light color="red" />
-        <Light color="yellow" />
-        <Light />
-      </div>
-    );
-  },
+  render: () => (
+    <div className="w-fit rounded-full bg-slate-200 p-3 border-2 border-black grid grid-cols-1 gap-2">
+      <Light color="red" />
+      <Light color="yellow" />
+      <Light />
+    </div>
+  ),
 };
