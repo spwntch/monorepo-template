@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Light from './Light';
 
 const meta: Meta<typeof Light> = {
-  title: 'REACT-SHARED-UI/Samples/Light',
+  title: 'Samples/Light',
   component: Light,
 };
 export default meta;
@@ -32,26 +32,13 @@ export const green: Story = {
   args: { color: 'green' },
 };
 
-/** Compose lights in a flex column div for a regular traffic light*/
+/** Compose lights in a single column grid for a regular traffic light*/
 export const composedTrafficLight: Story = {
-  render: () => {
-    return (
-      <div
-        style={{
-          width: 50,
-          borderRadius: 25,
-          background: 'lightgrey',
-          padding: 10,
-          border: '2px solid black',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 10,
-        }}
-      >
-        <Light color="red" />
-        <Light color="yellow" />
-        <Light />
-      </div>
-    );
-  },
+  render: () => (
+    <div className="w-fit rounded-full bg-slate-200 p-3 border-2 border-black grid grid-cols-1 gap-2">
+      <Light color="red" />
+      <Light color="yellow" />
+      <Light />
+    </div>
+  ),
 };

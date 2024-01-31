@@ -41,7 +41,7 @@
     "storybook": {
       "executor": "@nx/storybook:storybook",
       "options": {
-        "port": 4400,
+        "port": 4401,
         "configDir": "libs/react/shared/ui/.storybook"
       },
       "configurations": {
