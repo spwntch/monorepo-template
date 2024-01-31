@@ -4,6 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "npx nx serve getting-started",
+    "lint": "npx nx run-many -t lint",
+    "test": "npx nx run-many -t test",
     "webp": "scripts/webp.sh "
   },
   "private": true,

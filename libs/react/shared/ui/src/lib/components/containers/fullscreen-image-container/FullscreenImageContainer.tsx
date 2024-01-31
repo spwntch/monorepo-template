@@ -1,11 +1,5 @@
-import React from 'react'
+const FullscreenImageContainer = () => {
+  return <div className="w-96 h-72 border-2 border-black"></div>;
+};
 
-type Props = {}
-
-const FullscreenImageContainer = (props: Props) => {
-  return (
-    <div className='w-96 h-72 border-2 border-black'></div>
-  )
-}
-
-export default FullscreenImageContainer
+export default FullscreenImageContainer;

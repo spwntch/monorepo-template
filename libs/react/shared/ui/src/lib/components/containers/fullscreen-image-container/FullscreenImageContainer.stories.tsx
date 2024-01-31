@@ -8,6 +8,6 @@ const meta: Meta<typeof FullscreenImageContainer> = {
 export default meta;
 type Story = StoryObj<typeof FullscreenImageContainer>;
 
-export const Primary = {
+export const Primary:Story = {
   args: {},
 };
