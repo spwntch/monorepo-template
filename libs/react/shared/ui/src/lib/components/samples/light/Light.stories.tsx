@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Light from './Light';
 
 const meta: Meta<typeof Light> = {
-  title: 'REACT-SHARED-UI/Samples/Light',
+  title: 'Samples/Light',
   component: Light,
 };
 export default meta;
@@ -32,7 +32,7 @@ export const green: Story = {
   args: { color: 'green' },
 };
 
-/** Compose lights in a flex column div for a regular traffic light*/
+/** Compose lights in a single column grid for a regular traffic light*/
 export const composedTrafficLight: Story = {
   render: () => {
     return (
