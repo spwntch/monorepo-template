@@ -2,6 +2,7 @@
     "files.autoSave": "afterDelay",
     "conventionalCommits.scopes": [
         "storybook",
-        "react-shared-ui"
+        "react-shared-ui",
+        "apps-getting-started"
     ]
 }

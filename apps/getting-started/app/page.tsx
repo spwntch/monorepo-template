@@ -1,7 +1,7 @@
-import { FullscreenImageContainer, IAttributableImage } from '@spwn/react-shared-ui';
+import { BackgroundImageContainer, Light } from '@/react-shared-ui';
 
 export default async function Index() {
-  const image: IAttributableImage = {
+  const image = {
     src: 'splash.jpg',
     url: 'https://unsplash.com/@joshhild?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
     photographer: {
@@ -11,12 +11,15 @@ export default async function Index() {
   };
 
   return (
-    <FullscreenImageContainer image={image}>
-      <div className="h-full flex flex-col justify-center items-center px-3">
-        <div>
-          <img src="brand/logo.png" alt="" />
-        </div>
-       </div>
-     </FullscreenImageContainer>
+    <BackgroundImageContainer src={image.src}>
+      <Light />
+    </BackgroundImageContainer>
+    // <FullscreenImageContainer image={image}>
+    //   <div className="h-full flex flex-col justify-center items-center px-3">
+    //     <div>
+    //       <img src="brand/logo.png" alt="" />
+    //     </div>
+    //    </div>
+    //  </FullscreenImageContainer>
   );
 }
