@@ -9,6 +9,7 @@ const BackgroundImageContainer = ({ src = '/images/splash.webp' }: Props) => {
       style={{
         backgroundImage: `url(${src})`,
         backgroundSize: 'cover',
+        backgroundPosition: 'center'
       }}
     >
       <div className="text-cyan-500 text-5xl">Hello</div>
