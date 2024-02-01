@@ -3,6 +3,7 @@
     "conventionalCommits.scopes": [
         "storybook",
         "react-shared-ui",
-        "apps-getting-started"
+        "apps-getting-started",
+        "react-shared-site-shell"
     ]
 }
