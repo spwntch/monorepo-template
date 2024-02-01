@@ -12,6 +12,7 @@ type Story = StoryObj<typeof Light>;
 /** With no color speficied, we'll default to green. */
 export const Default: Story = {
   args: {},
+  tags: ['autodocs'],
   play: async ({ canvasElement }) => {
     // const canvas = within(canvasElement);
   },

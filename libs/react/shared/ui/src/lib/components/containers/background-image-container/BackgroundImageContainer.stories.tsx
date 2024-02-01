@@ -4,6 +4,8 @@ import BackgroundImageContainer from './BackgroundImageContainer';
 const meta: Meta<typeof BackgroundImageContainer> = {
   component: BackgroundImageContainer,
   title: 'Containers/Background Image Container',
+  tags: ['autodocs'],
+
 };
 export default meta;
 type Story = StoryObj<typeof BackgroundImageContainer>;
