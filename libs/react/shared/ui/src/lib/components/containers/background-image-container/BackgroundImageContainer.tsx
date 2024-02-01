@@ -10,7 +10,9 @@ const BackgroundImageContainer = ({ src = '/images/splash.webp' }: Props) => {
         backgroundImage: `url(${src})`,
         backgroundSize: 'cover',
       }}
-    ></div>
+    >
+      <div className="text-cyan-500 text-5xl">Hello</div>
+    </div>
   );
 };
 

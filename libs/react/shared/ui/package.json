@@ -1,5 +1,5 @@
 {
-  "name": "@my_org/react-shared-ui",
+  "name": "@spwn/react-shared-ui",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",
