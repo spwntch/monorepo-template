@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import ReactSharedSiteShell from './SiteShell';
+import SiteShell from './SiteShell';
 
-describe('ReactSharedSiteShell', () => {
+describe('SiteShell', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<ReactSharedSiteShell />);
+    const { baseElement } = render(<SiteShell />);
     expect(baseElement).toBeTruthy();
   });
 });

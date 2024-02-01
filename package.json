@@ -10,6 +10,8 @@
   },
   "private": true,
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
     "@nx/next": "17.3.0",
     "@swc/helpers": "~0.5.2",
     "next": "13.4.4",

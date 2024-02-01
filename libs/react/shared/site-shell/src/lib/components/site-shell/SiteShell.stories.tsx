@@ -1,24 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ReactSharedSiteShell } from './SiteShell';
+import SiteShell from './SiteShell';
 
-import { within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
-
-const meta: Meta<typeof ReactSharedSiteShell> = {
-  component: ReactSharedSiteShell,
-  title: 'ReactSharedSiteShell',
+const meta: Meta<typeof SiteShell> = {
+  component: SiteShell,
+  title: 'Site Shell',
 };
 export default meta;
-type Story = StoryObj<typeof ReactSharedSiteShell>;
+type Story = StoryObj<typeof SiteShell>;
 
-export const Primary = {
-  args: {},
-};
-
-export const Heading: Story = {
-  args: {},
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/Welcome to ReactSharedSiteShell!/gi)).toBeTruthy();
+export const FullyComposed = {
+  render: () => {
+    return <SiteShell></SiteShell>;
   },
 };
