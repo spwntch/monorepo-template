@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@/react-shared-ui": ["libs/react/shared/ui/src/index.ts"],
-      "@org/react-shared-site-shell": [
+      "@/react-shared-site-shell": [
         "libs/react/shared/site-shell/src/index.ts"
       ]
     }
