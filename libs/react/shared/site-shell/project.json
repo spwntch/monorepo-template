@@ -30,6 +30,49 @@
       "options": {
         "reportsDirectory": "../../../../coverage/libs/react/shared/site-shell"
       }
+    },
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "port": 4402,
+        "configDir": "libs/react/shared/site-shell/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/react-shared-site-shell",
+        "configDir": "libs/react/shared/site-shell/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c libs/react/shared/site-shell/.storybook --url=http://localhost:4400"
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "react-shared-site-shell:build-storybook",
+        "staticFilePath": "dist/storybook/react-shared-site-shell"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "react-shared-site-shell:build-storybook:ci"
+        }
+      }
     }
   }
 }

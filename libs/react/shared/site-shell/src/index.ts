@@ -1,1 +1,1 @@
-export * from './lib/react-shared-site-shell';
+export * from './lib/components/site-shell/SiteShell';

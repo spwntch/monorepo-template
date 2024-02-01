@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import ReactSharedSiteShell from './react-shared-site-shell';
+import ReactSharedSiteShell from './SiteShell';
 
 describe('ReactSharedSiteShell', () => {
   it('should render successfully', () => {
