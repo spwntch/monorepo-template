@@ -10,7 +10,7 @@ const BackgroundImageContainer = ({
 }: Props & PropsWithChildren) => {
   return (
     <div
-      className="h-full w-full border-cyan-500 border-4"
+      className="h-full w-full"
       style={{
         backgroundImage: `url(${src})`,
         backgroundSize: 'cover',
