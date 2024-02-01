@@ -1,4 +1,4 @@
-import { BackgroundImageContainer } from '@/react-shared-ui';
+import { BackgroundImageContainer, Light } from '@/react-shared-ui';
 
 export default async function Index() {
   const image = {
@@ -11,7 +11,9 @@ export default async function Index() {
   };
 
   return (
-    <BackgroundImageContainer src={image.src} />
+    <BackgroundImageContainer src={image.src}>
+      <Light />
+    </BackgroundImageContainer>
     // <FullscreenImageContainer image={image}>
     //   <div className="h-full flex flex-col justify-center items-center px-3">
     //     <div>
